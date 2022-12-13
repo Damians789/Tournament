@@ -25,3 +25,6 @@ Extras: 15%
 - modification of REST routing to adapt to SEO: 5%
 - use of session and application state in the program: 5%
 - placing the website in the cloud (e.g. Azure) and the ability to manage and monitor server resources: 5%
+
+Some of the technologies used:
+  ```EntityFrameworkCore, Microsoft.AspNetCore.Identity, Microsoft.AspNetCore.Authorization, Nlog, Linq, cshtml, Middleware, ILogger, .NET 6.0, MVC```
