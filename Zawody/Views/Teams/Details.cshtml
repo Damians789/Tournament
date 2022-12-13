@@ -1,0 +1,169 @@
+﻿@model Zawody.Models.Team
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Team</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ShortenedName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ShortenedName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Stadion)
+        </dt>
+        <dd class = "col-sm-10">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                @Html.DisplayFor(model => model.Stadion.Name)
+            </button>
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Trener)
+        </dt>
+        <dd class = "col-sm-10">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                @Html.DisplayFor(model => model.Trener.FullName)
+            </button>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Players)
+        </dt>
+        <dd class = "col-sm-10">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            Players
+          </button>
+        </dd>
+        </dl>
+</div>
+
+<div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 600px;">
+        <dl class="row">
+            <dd class="col-sm-10">
+                <table class="table">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Position</th>
+                    </tr>
+                    @foreach (var item in Model.Players)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FirstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Pozycja)
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </dd>
+    </dl>
+    </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trener</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <table class="table">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Hire Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">@Html.DisplayFor(model => model.Trener.ID)</th>
+                  <td>@Html.DisplayFor(model => model.Trener.FirstName)</td>
+                  <td>@Html.DisplayFor(model => model.Trener.LastName)</td>
+                  <td>@Html.DisplayFor(model => model.Trener.get_age)</td>
+                  <td>@Html.DisplayFor(model => model.Trener.HireDate)</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width: 600px;">
+    <div class="modal-content" style="width: 600px;">
+      <div class="modal-header" style="width: 600px;">
+        <h5 class="modal-title">Stadion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <table class="table">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Pojemnosc</th>
+                  <th scope="col">City</th>
+                  <th scope="col">Street</th>
+                  <th scope="col">PostalCode</th>
+                  <th scope="col">Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">@Html.DisplayFor(model => model.Stadion.Id)</th>
+                  <td>@Html.DisplayFor(item => item.Stadion.Name)</td>
+                  <td>@Html.DisplayFor(item => item.Stadion.Pojemnosc)</td>
+                  <td>@Html.DisplayFor(item => item.Stadion.Address.City)</td>
+                  <td>@Html.DisplayFor(item => item.Stadion.Address.Street)</td>
+                  <td>@Html.DisplayFor(item => item.Stadion.Address.PostalCode)</td>
+                  <td>@Html.DisplayFor(item => item.Stadion.Address.Country)</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                              

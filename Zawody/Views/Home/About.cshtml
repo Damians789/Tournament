@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Zawody.Models.PlayerViewModels.PlayerTeamGroup>
+
+@{
+    ViewData["Title"] = "Players with teams";
+}
+
+<h2>Teams with number of players </h2>
+
+<table>
+    <tr>
+        <th>
+            Team
+        </th>
+        <th>    </th>
+        <th>
+            Number Of Players
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>   </td>
+            <td>
+                @item.PlayerCount
+                
+            </td>
+        </tr>
+    }
+</table>

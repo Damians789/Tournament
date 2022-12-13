@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu internetowego. Możesz dostosować zachowanie tego procesu
+ poprzez edycję tego pliku MSBuild. Aby dowiedzieć się więcej o tym działaniu, odwiedź stronę https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAd/h0KEH4lEKFERgyDgju0wAAAAACAAAAAAAQZgAAAAEAACAAAAAMsuIY8Q9Y+75V5ZRGWzv4AfpCIUUgpbpbm/bJYuyaHAAAAAAOgAAAAAIAACAAAACiXyiuriMtQGlq4e5/bvXLmfdvlpN2puQwzCo1w16lvyAAAACWEEEVbUXvFqpIejK3A4mrwhWtUk0prEDuzFY5zX5twkAAAAC6kbzoCFk66WW9EpDezf7MXABhHyW20agjHL184oC2P9Nr7HLSei7R1+opmBnaGnuil0w1Pi7aUbW61KvESIH2</EncryptedPassword>
+    <_PublishTargetUrl>https://win5235.site4now.net:8172/msdeploy.axd?site=dannyzawodnik-001-site1/dannyzawodnik-001-site1</_PublishTargetUrl>
+    <History>True|2022-01-25T14:33:54.6805164Z;True|2022-01-25T14:26:24.3908692+01:00;True|2022-01-25T14:15:07.7654695+01:00;False|2022-01-25T13:54:51.0678717+01:00;False|2022-01-25T13:50:47.2468112+01:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Authentication:Google:ClientId">
+      <Value>1043714565628-go3ga38j2i71cjtp2s536vlgis1qvc4g.apps.googleusercontent.com</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Authentication:Google:ClientSecret">
+      <Value>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</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=DESKTOP-7526Q4N%3bDatabase=Zawody%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

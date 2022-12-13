@@ -1,0 +1,393 @@
+2022-01-23 17:26:58.1039|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:26:59.1111|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:26:59.2297|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role c58c09e2-a5b2-4bad-b946-2e30d2ca1625 validation failed: DuplicateRoleName. 
+2022-01-23 17:26:59.2470|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:26:59.2470|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role f29a01ce-2e5c-4bea-8536-d167cbe0b9fe validation failed: DuplicateRoleName. 
+2022-01-23 17:26:59.2470|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:26:59.2470|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role e49475af-c9db-4b28-a604-a3291ff1c85a validation failed: DuplicateRoleName. 
+2022-01-23 17:26:59.2600|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:26:59.2600|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 325ce8c4-f705-4d21-8c36-0e831364f692 validation failed: DuplicateRoleName. 
+2022-01-23 17:26:59.2600|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:26:59.2773|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 671695cf-ee32-4fd1-af4b-8dbf2c59d0db validation failed: DuplicateRoleName. 
+2022-01-23 17:26:59.3106|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__defaultUser_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM [Identity].[User] AS [u]
+        WHERE [u].[Id] = @__defaultUser_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:26:59.3308|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 
+2022-01-23 17:26:59.4008|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:26:59.4141|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:26:59.4141|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:26:59.4141|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:26:59.4404|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2022-01-23 17:26:59.5031|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-01-23 17:26:59.5104|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Identity].[Address] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:27:00.0141|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7102 
+2022-01-23 17:27:00.0141|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5102 
+2022-01-23 17:27:00.0231||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-01-23 17:27:00.0231||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-01-23 17:27:00.0231||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\sq\III_rok\V_semestr\NET\Cwiczenia\lab5\Zawody\Zawody\ 
+2022-01-23 17:27:21.1074|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:21.1074|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 
+2022-01-23 17:27:21.1450|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 
+2022-01-23 17:27:21.2625|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[ClaimType], [u].[ClaimValue], [u].[UserId]
+FROM [Identity].[UserClaims] AS [u]
+WHERE [u].[UserId] = @__user_Id_0 
+2022-01-23 17:27:21.3162|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [Identity].[UserRoles] AS [u]
+INNER JOIN [Identity].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0 
+2022-01-23 17:27:21.3239|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:27:21.3362|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [Identity].[RoleClaims] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0 
+2022-01-23 17:27:21.3362||INFO|Zawody.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-01-23 17:27:21.3840|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:21.4028|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:27:26.8297|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:26.8656|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Identity].[Person] AS [p]
+WHERE [p].[Discriminator] = N'Player' 
+2022-01-23 17:27:26.8864|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ID], [p].[CreatedById], [p].[DateOfBirth], [p].[Discriminator], [p].[FirstName], [p].[LastName], [p].[Pozycja], [p].[TeamID]
+FROM [Identity].[Person] AS [p]
+WHERE [p].[Discriminator] = N'Player'
+ORDER BY [p].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2022-01-23 17:27:26.9328|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:27:28.3302|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:28.3456|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ID], [p].[CreatedById], [p].[DateOfBirth], [p].[Discriminator], [p].[FirstName], [p].[LastName], [p].[Pozycja], [p].[TeamID]
+FROM [Identity].[Person] AS [p]
+WHERE ([p].[Discriminator] = N'Player') AND ([p].[ID] = @__p_0) 
+2022-01-23 17:27:28.6112|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Zawody.Exceptions.ForbidException: Exception of type 'Zawody.Exceptions.ForbidException' was thrown.
+   at Zawody.Controllers.PlayersController.Edit(Nullable`1 id) in D:\sq\III_rok\V_semestr\NET\Cwiczenia\lab5\Zawody\Zawody\Controllers\PlayersController.cs:line 140
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-23 17:27:52.3173|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:52.3224|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Identity].[Person] AS [p]
+WHERE [p].[Discriminator] = N'Player' 
+2022-01-23 17:27:52.3224|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ID], [p].[CreatedById], [p].[DateOfBirth], [p].[Discriminator], [p].[FirstName], [p].[LastName], [p].[Pozycja], [p].[TeamID]
+FROM [Identity].[Person] AS [p]
+WHERE [p].[Discriminator] = N'Player'
+ORDER BY [p].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2022-01-23 17:27:52.3476|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:27:55.4187|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:27:55.4304|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:28:05.5521|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:28:05.5882|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[AddressId], [s].[Name], [s].[Pojemnosc], [a].[Id], [a].[City], [a].[Country], [a].[PostalCode], [a].[Street]
+FROM [Identity].[Stadion] AS [s]
+INNER JOIN [Identity].[Address] AS [a] ON [s].[AddressId] = [a].[Id] 
+2022-01-23 17:28:05.6538|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:28:06.8906|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:28:06.9022|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[City], [a].[Country], [a].[PostalCode], [a].[Street]
+FROM [Identity].[Address] AS [a] 
+2022-01-23 17:28:06.9022|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:28:26.1143|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:28:26.1236|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[City], [a].[Country], [a].[PostalCode], [a].[Street]
+FROM [Identity].[Address] AS [a] 
+2022-01-23 17:28:26.1518|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:28:28.7417|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:28:28.7417|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[City], [a].[Country], [a].[PostalCode], [a].[Street]
+FROM [Identity].[Address] AS [a]
+WHERE [a].[Id] = @__id_0 
+2022-01-23 17:28:28.7696|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:28:30.7239|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:28:30.7296|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[Id] = @__p_0 
+2022-01-23 17:42:04.8721|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:42:05.6452|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (54ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:05.7394|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 11d5e360-e20d-4da1-bafe-630b529563b9 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:05.7495|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:05.7495|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role f899b535-2d23-4cc7-ba0b-d3ed29f22129 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:05.7495|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:05.7495|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 38184957-1771-4ac7-9092-b71908d70b81 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:05.7595|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:05.7595|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 074973dd-9d74-4ebf-a272-86ac16443b23 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:05.7595|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:05.7595|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 238c8ada-31a5-4951-a918-6a93e9123ae8 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:05.7911|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__defaultUser_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM [Identity].[User] AS [u]
+        WHERE [u].[Id] = @__defaultUser_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:42:05.7911|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 
+2022-01-23 17:42:05.8690|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:42:05.8690|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:42:05.8690|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:42:05.8829|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:42:05.8829|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2022-01-23 17:42:05.9131|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-01-23 17:42:05.9172|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Identity].[Address] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:42:47.7715|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:42:48.5722|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (53ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:48.6660|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 50dfe80f-fb41-43f8-a3ff-ccd421e25a2b validation failed: DuplicateRoleName. 
+2022-01-23 17:42:48.6660|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:48.6660|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 8b07fb9b-e53b-4f14-b7d7-e6087047dbfe validation failed: DuplicateRoleName. 
+2022-01-23 17:42:48.6660|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:48.6660|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 045223a5-4a1f-452d-87d6-d0de36ce66b2 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:48.6801|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:48.6801|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role a6e45098-6063-4fbd-9e65-10a356e1d0f6 validation failed: DuplicateRoleName. 
+2022-01-23 17:42:48.6801|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:42:48.6801|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 92b0bb38-ea64-46e9-9e27-0a441dba72bf validation failed: DuplicateRoleName. 
+2022-01-23 17:42:48.7108|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__defaultUser_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM [Identity].[User] AS [u]
+        WHERE [u].[Id] = @__defaultUser_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:42:48.7108|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 
+2022-01-23 17:42:48.7877|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:42:48.7974|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:42:48.7974|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:42:48.7974|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:42:48.8146|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2022-01-23 17:42:48.8344|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-01-23 17:42:48.8394|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Identity].[Address] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:50:15.4343|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.1' with options: None 
+2022-01-23 17:50:16.3985|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (62ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:50:16.4994|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 43aa7ed6-2b02-48e8-bfcc-37790a9e8fde validation failed: DuplicateRoleName. 
+2022-01-23 17:50:16.5150|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:50:16.5150|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role c27af901-09b1-45d2-bdf9-5ea3d37feb51 validation failed: DuplicateRoleName. 
+2022-01-23 17:50:16.5245|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:50:16.5245|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 2b2d2f0d-ca03-4248-b742-0de7d44143c6 validation failed: DuplicateRoleName. 
+2022-01-23 17:50:16.5455|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:50:16.5455|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 3f91555a-4abc-4b5f-9dd4-d367135017bf validation failed: DuplicateRoleName. 
+2022-01-23 17:50:16.5562|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Identity].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 
+2022-01-23 17:50:16.5562|0|WARN|Microsoft.AspNetCore.Identity.RoleManager|Role 017cb80f-a097-40f9-94ad-051b0e48a9d7 validation failed: DuplicateRoleName. 
+2022-01-23 17:50:16.5949|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__defaultUser_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM [Identity].[User] AS [u]
+        WHERE [u].[Id] = @__defaultUser_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:50:16.6105|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ProfilePicture], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[UsernameChangeLimit]
+FROM [Identity].[User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 
+2022-01-23 17:50:16.6793|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:50:16.6899|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:50:16.6950|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2022-01-23 17:50:16.6950|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2022-01-23 17:50:16.7129|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2022-01-23 17:50:16.7778|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2022-01-23 17:50:16.7778|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Identity].[Address] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2022-01-23 17:50:17.2950|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7102 
+2022-01-23 17:50:17.2950|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5102 
+2022-01-23 17:50:17.2950||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-01-23 17:50:17.2950||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-01-23 17:50:17.3057||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\sq\III_rok\V_semestr\NET\Cwiczenia\lab5\Zawody\Zawody\ 
+2022-01-23 17:50:27.2210|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

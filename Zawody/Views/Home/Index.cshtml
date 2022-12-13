@@ -1,0 +1,52 @@
+﻿@*@{
+    ViewData["Title"] = "Home Page";
+}
+*@
+
+@using Zawody.Models
+@model IEnumerable<Zawody.Models.ImageModel>
+
+ 
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <span>Select Image:</span>
+        <select name="ImageId" onchange="document.forms[0].submit();">
+            <option value="0">Please select</option>
+            @foreach (ImageModel image in Model)
+            {
+                if (image.IsSelected)
+                {
+                    <option value="@image.Id" selected="selected">@image.Name</option>
+                }
+                else
+                {
+                    <option value="@image.Id">@image.Name</option>
+                }
+            }
+        </select>
+    }
+    @if (ViewBag.Base64String != null)
+    {
+        <hr/>
+        <img alt="" src="@ViewBag.Base64String" style="height:100px;width:100px;"/>
+    }
+</body>
+</html>
+<asp:Image ID="Image_Win_Walp" runat="server"
+Height="200" Width="300"
+ImageUrl="~/PrivateFiles/hmm.jpeg"
+ImageAlign="Right"
+AlternateText="Windows Logo" />

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Zawody.Models.Address>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@Html.ViewContext*@
+<h2>Addresses</h2>
+
+@await Html.PartialAsync("~/Views/Addresses/AddressPartial.cshtml")
